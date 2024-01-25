@@ -64,13 +64,13 @@
 		610F6E742B63068D0002F103 /* AlbumPhotos */ = {
 			isa = PBXGroup;
 			children = (
+				610F6E962B6308BC0002F103 /* Views */,
+				610F6E952B6308B70002F103 /* Modules */,
+				610F6E942B6308AE0002F103 /* Models */,
 				610F6E8F2B63085C0002F103 /* Service */,
 				610F6E752B63068D0002F103 /* AppDelegate.swift */,
 				610F6E772B63068D0002F103 /* SceneDelegate.swift */,
 				610F6E792B63068D0002F103 /* ViewController.swift */,
-				610F6E7B2B63068D0002F103 /* Main.storyboard */,
-				610F6E7E2B63068F0002F103 /* Assets.xcassets */,
-				610F6E802B63068F0002F103 /* LaunchScreen.storyboard */,
 				610F6E832B63068F0002F103 /* Info.plist */,
 			);
 			path = AlbumPhotos;
@@ -83,6 +83,30 @@
 				610F6E922B6308860002F103 /* Network.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		610F6E942B6308AE0002F103 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		610F6E952B6308B70002F103 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		610F6E962B6308BC0002F103 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				610F6E7E2B63068F0002F103 /* Assets.xcassets */,
+				610F6E802B63068F0002F103 /* LaunchScreen.storyboard */,
+				610F6E7B2B63068D0002F103 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
