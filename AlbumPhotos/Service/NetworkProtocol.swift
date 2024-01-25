@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol NetworkProtocol {
     
-    
+    func getData(handler: @escaping ([Album]?) -> Void)
 }
