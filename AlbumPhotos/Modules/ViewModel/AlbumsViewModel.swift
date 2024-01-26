@@ -10,6 +10,7 @@ import Foundation
 class AlbumsViewModel {
     
     var network: NetworkProtocol!
+    var localSource: LocalSourceProtocol!
     var passAlbumsToViewController: (()->()) = {}
     var albums: [Album] = [] {
         didSet {
@@ -17,13 +18,21 @@ class AlbumsViewModel {
         }
     }
     
-    init(network: NetworkProtocol) {
+    init(network: NetworkProtocol, localSource: LocalSourceProtocol) {
         self.network = network
+        self.localSource = localSource
     }
     
     func getAlbums() {
-        network.getData { albums in
-            self.albums = albums ?? []
+        if InternetConnection.sharedInstance.isConnectedToInternet() {
+            
+            network.getData { albums in
+                self.albums = albums ?? []
+            }
+            localSource.deleteAllAlbums()
+            
+        } else {
+            self.albums = localSource.getAllAlbums()
         }
     }
 }
