@@ -10,4 +10,6 @@ import Foundation
 class Constants {
     
     static let BaseURL = "https://jsonplaceholder.typicode.com/photos"
+    static let AlbumTableViewCellID = "AlbumTableViewCellID"
+    static let AlbumTableViewCell = "AlbumTableViewCell"
 }
