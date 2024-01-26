@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLQ-jv-6gS">
-                                <rect key="frame" x="16" y="75" width="86.333333333333329" height="30"/>
+                                <rect key="frame" x="16" y="75" width="367" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,6 +46,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="KwK-3e-vkY" secondAttribute="bottom" id="6Jo-VA-FNY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uLQ-jv-6gS" secondAttribute="trailing" constant="10" id="Can-JN-LbH"/>
                             <constraint firstItem="KwK-3e-vkY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QYz-Q7-rb8"/>
                             <constraint firstItem="KwK-3e-vkY" firstAttribute="top" secondItem="uLQ-jv-6gS" secondAttribute="bottom" constant="16" id="SBv-x6-Jc4"/>
                             <constraint firstItem="uLQ-jv-6gS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="oos-fL-E2J"/>

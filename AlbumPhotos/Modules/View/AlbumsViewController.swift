@@ -28,7 +28,7 @@ class AlbumsViewController: UIViewController {
     }
     
     func initValues() {
-        albumViewModel = AlbumsViewModel(network: Network())
+        albumViewModel = AlbumsViewModel(network: Network(), localSource:  LocalSource())
         
         albumViewModel.passAlbumsToViewController = { [weak self] in
             guard let self = self else {return}
@@ -38,7 +38,7 @@ class AlbumsViewController: UIViewController {
                 for item in 0..<10 {
                     self.currentAlbums.append(self.albumViewModel.albums[item])
                 }
-                
+                self.albumViewModel.localSource.cacheAll(albums: self.currentAlbums)
             } else {
                 self.currentAlbums = self.totalAlbums
             }
@@ -62,8 +62,14 @@ class AlbumsViewController: UIViewController {
                 currentAlbums.append(totalAlbums[i])
             }
         }
+        cachingAlbums()
         self.currentAlbumsCount += 10
         self.albumsTableView.reloadData()
+    }
+    
+    func cachingAlbums() {
+        albumViewModel.localSource.deleteAllAlbums()
+        albumViewModel.localSource.cacheAll(albums: currentAlbums)
     }
 }
 
