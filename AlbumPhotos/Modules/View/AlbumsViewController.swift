@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ImageSlideshow
 
 class AlbumsViewController: UIViewController {
     
@@ -64,4 +65,9 @@ class AlbumsViewController: UIViewController {
         self.currentAlbumsCount += 10
         self.albumsTableView.reloadData()
     }
+}
+
+
+extension AlbumsViewController: ImageSlideshowDelegate {
+    
 }

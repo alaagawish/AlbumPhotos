@@ -23,6 +23,9 @@
 		610F6EA42B63239E0002F103 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F6EA22B63239E0002F103 /* AlbumTableViewCell.swift */; };
 		610F6EA52B63239E0002F103 /* AlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 610F6EA32B63239E0002F103 /* AlbumTableViewCell.xib */; };
 		610F6EA72B6325810002F103 /* AlbumsViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F6EA62B6325810002F103 /* AlbumsViewController+TableView.swift */; };
+		610F6EB82B6331F10002F103 /* ImageSlideshow in Frameworks */ = {isa = PBXBuildFile; productRef = 610F6EB72B6331F10002F103 /* ImageSlideshow */; };
+		610F6EBA2B6331F10002F103 /* ImageSlideshow/Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 610F6EB92B6331F10002F103 /* ImageSlideshow/Alamofire */; };
+		610F6EBC2B6331F10002F103 /* ImageSlideshow/Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 610F6EBB2B6331F10002F103 /* ImageSlideshow/Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +52,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610F6EBA2B6331F10002F103 /* ImageSlideshow/Alamofire in Frameworks */,
+				610F6EB82B6331F10002F103 /* ImageSlideshow in Frameworks */,
 				610F6E8E2B6308160002F103 /* Kingfisher in Frameworks */,
+				610F6EBC2B6331F10002F103 /* ImageSlideshow/Kingfisher in Frameworks */,
 				610F6E8B2B63080A0002F103 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +176,9 @@
 			packageProductDependencies = (
 				610F6E8A2B63080A0002F103 /* Alamofire */,
 				610F6E8D2B6308160002F103 /* Kingfisher */,
+				610F6EB72B6331F10002F103 /* ImageSlideshow */,
+				610F6EB92B6331F10002F103 /* ImageSlideshow/Alamofire */,
+				610F6EBB2B6331F10002F103 /* ImageSlideshow/Kingfisher */,
 			);
 			productName = AlbumPhotos;
 			productReference = 610F6E722B63068D0002F103 /* AlbumPhotos.app */;
@@ -202,7 +211,7 @@
 			packageReferences = (
 				610F6E892B63080A0002F103 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				610F6E8C2B6308160002F103 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				610F6EA82B632F270002F103 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
+				610F6EB62B6331F10002F103 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
 			);
 			productRefGroup = 610F6E732B63068D0002F103 /* Products */;
 			projectDirPath = "";
@@ -479,7 +488,7 @@
 				minimumVersion = 5.8.0;
 			};
 		};
-		610F6EA82B632F270002F103 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
+		610F6EB62B6331F10002F103 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/zvonicek/ImageSlideshow";
 			requirement = {
@@ -499,6 +508,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 610F6E8C2B6308160002F103 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		610F6EB72B6331F10002F103 /* ImageSlideshow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 610F6EB62B6331F10002F103 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow;
+		};
+		610F6EB92B6331F10002F103 /* ImageSlideshow/Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 610F6EB62B6331F10002F103 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/Alamofire;
+		};
+		610F6EBB2B6331F10002F103 /* ImageSlideshow/Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 610F6EB62B6331F10002F103 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -14,7 +14,7 @@ extension AlbumsViewController: UITableViewDataSource, UITableViewDelegate, UICo
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.AlbumTableViewCellID, for: indexPath) as! AlbumTableViewCell
-        cell.addNew(album: currentAlbums[indexPath.row])
+        cell.addNew(album: currentAlbums[indexPath.row], viewController: self)
         return cell
     }
     
